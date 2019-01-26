@@ -1,37 +1,24 @@
-## Welcome to GitHub Pages
+## What is OpenMacroBoard
+OpenMacroBoard provides a few libraries that help you implement custom functionality for various macro board (with focus on devices with key displays, like the Stream Deck or Stream Deck Mini). At the moment OpenMacroBoard is for developers only and there is no easy-to-use software or installer - just a bunch of libraries :wink:
 
-You can use the [editor on GitHub](https://github.com/OpenMacroBoard/openmacroboard.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+## Getting started
+To start developing you need `OpenMacroBoard.SDK` and the provider(s) you like. Providers are libraries that manage the communication to the macro boards. This abstraction is needed to allow third parties to implement devices without changes to the core functionality.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+To try things out, create a new console application (>= .Net 4.0), add the nuget package [`OpenMacroBoard.VirtualBoard`](https://www.nuget.org/packages/OpenMacroBoard.VirtualBoard/) (`OpenMacroBoard.SDK` will be downloaded as dependency automatically) and copy/paste the following lines:
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```CSharp
+using(var device = BoardFactory.SpawnVirtualBoard())
+{
+    var redKey = KeyBitmap.Create.FromRgb(255,0,0);
+    device.SetKeyBitmap(redKey);
+    Console.ReadKey();
+}
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+If you want to run your program on a real device, you can add another provider (for example [`StreamDeckSharp`](https://www.nuget.org/packages/StreamDeckSharp/)).
 
-### Jekyll Themes
+## Plans for the future
+I'd like to write an open source alternative for the elgato stream deck software that supports more devices and lets developers write functions/plugins/widgets for all devices with an existing `IMacroBoard` provider. If you want to help feel free to contact me (just create a ticket or send me a mail).
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/OpenMacroBoard/openmacroboard.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+## Details
+For more details and information please visit the [github repositories](https://github.com/OpenMacroBoard).
