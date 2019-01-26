@@ -311,6 +311,10 @@ body {
 	font-weight: 400
 }
 
+a code{
+	font-weight: bold;
+}
+
 h1 a{
 	text-align: center;
 	display: block;
