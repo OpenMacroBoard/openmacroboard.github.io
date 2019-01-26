@@ -17,6 +17,13 @@ using(var device = BoardFactory.SpawnVirtualBoard())
 
 If you want to run your program on a real device, you can add another provider (for example [StreamDeckSharp](https://www.nuget.org/packages/StreamDeckSharp/)).
 
+## Examples
+You can find a lot of examples in our [example collection](https://github.com/OpenMacroBoard/OpenMacroBoard.ExampleCollection)
+
+Here are a few impressions
+
+![Lasershow on StreamDeck](/assets/images/lasershow.png)
+
 ## Plans for the future
 I'd like to write an open source alternative for the elgato stream deck software that supports more devices and lets developers write functions/plugins/widgets for all devices with an existing `IMacroBoard` provider. If you want to help feel free to contact me (just create a ticket or send me a mail).
 
