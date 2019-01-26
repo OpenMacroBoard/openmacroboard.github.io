@@ -4,9 +4,9 @@ OpenMacroBoard provides a few libraries that help you implement custom functiona
 ## Getting started
 To start developing you need `OpenMacroBoard.SDK` and the provider(s) you like. Providers are libraries that manage the communication to the macro boards. This abstraction is needed to allow third parties to implement devices without changes to the core functionality.
 
-To try things out, create a new console application (>= .Net 4.0), add the nuget package [`OpenMacroBoard.VirtualBoard`](https://www.nuget.org/packages/OpenMacroBoard.VirtualBoard/) (`OpenMacroBoard.SDK` will be downloaded as dependency automatically) and copy/paste the following lines:
+To try things out, create a new console application (>= .Net 4.0), add the nuget package [OpenMacroBoard.VirtualBoard](https://www.nuget.org/packages/OpenMacroBoard.VirtualBoard/) (`OpenMacroBoard.SDK` will be downloaded as dependency automatically) and copy/paste the following lines:
 
-```CSharp
+```c#
 using(var device = BoardFactory.SpawnVirtualBoard())
 {
     var redKey = KeyBitmap.Create.FromRgb(255,0,0);
@@ -15,7 +15,7 @@ using(var device = BoardFactory.SpawnVirtualBoard())
 }
 ```
 
-If you want to run your program on a real device, you can add another provider (for example [`StreamDeckSharp`](https://www.nuget.org/packages/StreamDeckSharp/)).
+If you want to run your program on a real device, you can add another provider (for example [StreamDeckSharp](https://www.nuget.org/packages/StreamDeckSharp/)).
 
 ## Plans for the future
 I'd like to write an open source alternative for the elgato stream deck software that supports more devices and lets developers write functions/plugins/widgets for all devices with an existing `IMacroBoard` provider. If you want to help feel free to contact me (just create a ticket or send me a mail).
