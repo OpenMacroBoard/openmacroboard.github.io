@@ -334,7 +334,7 @@ a {
 a:hover,
 a:focus {
 	color: #069;
-	font-weight: bold
+	text-decoration: underline;
 }
 
 a small {
@@ -444,7 +444,6 @@ header ul a {
 header ul a:hover,
 header ul a:focus {
 	color: #675C5C;
-	font-weight: bold
 }
 
 header ul a:active {
