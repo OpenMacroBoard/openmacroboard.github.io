@@ -24,6 +24,9 @@ Here are a few impressions
 
 ![Lasershow on StreamDeck](/assets/images/lasershow.png)
 
+[![Demo video of the example](https://i.imgur.com/8tlkaIg.png)](http://www.youtube.com/watch?v=tNwUG0sPmKw)  
+_*The glitches you can see are already fixed._
+
 ## Plans for the future
 I'd like to write an open source alternative for the elgato stream deck software that supports more devices and lets developers write functions/plugins/widgets for all devices with an existing `IMacroBoard` provider. If you want to help feel free to contact me (just create a ticket or send me a mail).
 
