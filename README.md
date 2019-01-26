@@ -4,7 +4,7 @@ OpenMacroBoard provides a few libraries that help you implement custom functiona
 ## Getting started
 To start developing you need `OpenMacroBoard.SDK` and the provider(s) you like. Providers are libraries that manage the communication to the macro boards. This abstraction is needed to allow third parties to implement devices without changes to the core functionality.
 
-To try things out, create a new console application (>= .Net 4.0), add the nuget package [OpenMacroBoard.VirtualBoard](https://www.nuget.org/packages/OpenMacroBoard.VirtualBoard/) (`OpenMacroBoard.SDK` will be downloaded as dependency automatically) and copy/paste the following lines:
+To try things out, create a new console application (>= .Net 4.0), add the nuget package [`OpenMacroBoard.VirtualBoard`](https://www.nuget.org/packages/OpenMacroBoard.VirtualBoard/) (`OpenMacroBoard.SDK` will be downloaded as dependency automatically) and copy/paste the following lines:
 
 ```c#
 using(var device = BoardFactory.SpawnVirtualBoard())
