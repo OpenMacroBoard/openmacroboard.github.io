@@ -2,9 +2,9 @@
 OpenMacroBoard provides a few libraries that help you implement custom functionality for various macro board (with focus on devices with key displays, like the Stream Deck or Stream Deck Mini). At the moment OpenMacroBoard is for developers only and there is no easy-to-use software or installer - just a bunch of libraries 😉
 
 ## Getting started
-To start developing you need `OpenMacroBoard.SDK` and the provider(s) you like. Providers are libraries that manage the communication to the macro boards. This abstraction is needed to allow third parties to implement devices without changes to the core functionality.
+To start developing you need [`OpenMacroBoard.SDK`](https://www.nuget.org/packages/OpenMacroBoard.SDK/) and the provider(s) you like. Providers are libraries that manage the communication to the macro boards. This abstraction is needed to allow third parties to implement devices without changes to the core functionality.
 
-To try things out, create a new console application (>= .Net 4.0), add the nuget package [`OpenMacroBoard.VirtualBoard`](https://www.nuget.org/packages/OpenMacroBoard.VirtualBoard/) (`OpenMacroBoard.SDK` will be downloaded as dependency automatically) and copy/paste the following lines:
+To try things out, create a new console application (>= .Net 4.0), add the nuget package [`OpenMacroBoard.VirtualBoard`](https://www.nuget.org/packages/OpenMacroBoard.VirtualBoard/) (OpenMacroBoard.SDK will be downloaded as dependency automatically) and copy/paste the following lines:
 
 ```c#
 using(var device = BoardFactory.SpawnVirtualBoard())
@@ -15,7 +15,7 @@ using(var device = BoardFactory.SpawnVirtualBoard())
 }
 ```
 
-If you want to run your program on a real device, you can add another provider (for example [StreamDeckSharp](https://www.nuget.org/packages/StreamDeckSharp/)).
+If you want to run your program on a real device, you can add another provider (for example [`StreamDeckSharp`](https://www.nuget.org/packages/StreamDeckSharp/)).
 
 ## Examples
 You can find a lot of examples in our [example collection](https://github.com/OpenMacroBoard/OpenMacroBoard.ExampleCollection)
