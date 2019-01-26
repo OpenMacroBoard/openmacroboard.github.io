@@ -1,3 +1,4 @@
 theme: jekyll-theme-minimal
 title: OpenMacroBoard
 description: A library that helps you implement custom functions for different macro boards.
+logo: assets/images/OpenMacroBoard-Logo-600x400.png
