@@ -31,4 +31,4 @@ _*The glitches you can see are already fixed._
 I'd like to write an open source alternative for the elgato stream deck software that supports more devices and lets developers write functions/plugins/widgets for all devices with an existing `IMacroBoard` provider. If you want to help feel free to contact me (just create a ticket or send me a mail).
 
 ## Details
-For more details and information please visit the [github repositories](https://github.com/OpenMacroBoard).
+For more details and information please check out our [github repositories](https://github.com/OpenMacroBoard).
