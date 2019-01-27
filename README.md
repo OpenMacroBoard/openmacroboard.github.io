@@ -30,11 +30,11 @@ At the moment there are just two providers, with a total of three supported devi
 
 | Device	| Provider	| Description	|
 | ---	| ---	| ---	|
-| [Stream Deck](https://www.elgato.com/de/gaming/stream-deck)<sup>1</sup>	| [`StreamDeckSharp`](https://www.nuget.org/packages/StreamDeckSharp/)	| 5x3 by Elgato	|
-| [Stream Deck Mini](https://www.elgato.com/de/gaming/stream-deck-mini)<sup>1</sup>	| [`StreamDeckSharp`](https://www.nuget.org/packages/StreamDeckSharp/)	| 3x2 by Elgato	|
+| [Stream Deck](https://www.elgato.com/de/gaming/stream-deck)	| [`StreamDeckSharp`](https://www.nuget.org/packages/StreamDeckSharp/)<sup>1</sup>	| 5x3 by Elgato	|
+| [Stream Deck Mini](https://www.elgato.com/de/gaming/stream-deck-mini)	| [`StreamDeckSharp`](https://www.nuget.org/packages/StreamDeckSharp/)<sup>1</sup>	| 3x2 by Elgato	|
 | VirtualBoard	| [`OpenMacroBoard.VirtualBoard`](https://www.nuget.org/packages/OpenMacroBoard.VirtualBoard/)	| Software emulated board with arbitrary key configuration	|
 
-<sup>1</sup> _Not officially supported by the manufacturer, but thrid party implementations_
+<sup>1</sup> _StreamDeckSharp is not related to Elgato in any way_
 
 We'd love to add more. You can implement it by yourself if you are a developer by referencing
 [`OpenMacroBoard.SDK`](https://www.nuget.org/packages/OpenMacroBoard.SDK/) and write a method that returns an IMacroBoard.
