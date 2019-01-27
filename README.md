@@ -1,5 +1,5 @@
 ## What is OpenMacroBoard
-OpenMacroBoard provides a few libraries that help you implement custom functionality for various macro board (with focus on devices with key displays, like the Stream Deck or Stream Deck Mini). At the moment OpenMacroBoard is for developers only and there is no easy-to-use software or installer - just a bunch of libraries 😉
+OpenMacroBoard provides a few libraries that help you implement custom functionality for various macro boards (with focus on devices with key displays, like the Stream Deck or Stream Deck Mini). At the moment OpenMacroBoard is for developers only and there is no easy-to-use software or installer - just a bunch of libraries 😉
 
 ## Getting started
 To start developing you need [`OpenMacroBoard.SDK`](https://www.nuget.org/packages/OpenMacroBoard.SDK/) and the provider(s) you like. Providers are libraries that manage the communication to the macro boards. This abstraction is needed to allow third parties to implement devices without changes to the core functionality.
