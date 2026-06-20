@@ -1,8 +1,10 @@
 ## What is OpenMacroBoard?
 
-OpenMacroBoard (maintained by [Christian Franzl](https://github.com/wischi-chr)) provides a few libraries,
+OpenMacroBoard (maintained by [Christian Franzl](https://github.com/wischi-chr))
+is a collection of .NET libraries (.NET 10+),
 that help you implement custom functionality for various macro boards
-with focus on devices with key displays.
+mainly focusing on devices with key displays.
+
 At the moment OpenMacroBoard is for developers only and there is no easy-to-use
 software or installer - just a bunch of libraries ;-)
 
