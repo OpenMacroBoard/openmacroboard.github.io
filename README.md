@@ -78,15 +78,12 @@ NuGet: [`StreamDeckSharp`](https://www.nuget.org/packages/StreamDeckSharp/)
 
 | Device                                                                | Description |
 | --------------------------------------------------------------------- | ----------- |
-| [Stream Deck](https://www.elgato.com/de/gaming/stream-deck)           | 5 x 3       |
-| Stream Deck Rev2 <sup>1</sup>                                         | 5 x 3       |
-| Stream Deck MK2                                                       | 5 x 3       |
-| Stream Deck XL                                                        | 8 x 4       |
-| Stream Deck XL Rev2 <sup>1</sup>                                      | 8 x 4       |
+| Stream Deck _(original/legacy)_                                       | 5 x 3       |
+| [Stream Deck](https://www.elgato.com/de/gaming/stream-deck) _(MK2)_   | 5 x 3       |
+| [Stream Deck XL](https://www.elgato.com/ww/de/p/stream-deck-xl)       | 8 x 4       |
 | [Stream Deck Mini](https://www.elgato.com/de/gaming/stream-deck-mini) | 3 x 2       |
-| Stream Deck Mini Rev2 <sup>1</sup>                                    | 3 x 2       |
 
-<sup>1</sup> New revisions are typically not even marketed as something new, but they often differ in their protocol and USB product IDs.
+Keep in mind that Elgato sometimes releases new revisions of their devices with different PIDs (USB product IDs) which might break compatibility. If you have a device like that, please open an issue on GitHub with the new PID.
 
 ### OpenMacroBoard.SocketIO 
 
